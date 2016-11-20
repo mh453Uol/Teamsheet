@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA78D156-FE37-46FC-91DC-DF1E47105AD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Teamsheet.Data</RootNamespace>
+    <AssemblyName>Teamsheet.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\TeamsheetContext.cs" />
+    <Compile Include="EntityConfiguration\ActivityConfiguration.cs" />
+    <Compile Include="EntityConfiguration\DayConfiguration.cs" />
+    <Compile Include="EntityConfiguration\EntryConfiguration.cs" />
+    <Compile Include="EntityConfiguration\SectionConfiguration.cs" />
+    <Compile Include="EntityConfiguration\WeekConfiguration.cs" />
+    <Compile Include="Migrations\201611191631410_Initial.cs" />
+    <Compile Include="Migrations\201611191631410_Initial.Designer.cs">
+      <DependentUpon>201611191631410_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611200902592_ReplacingDataAnnotationWithFluentApi.cs" />
+    <Compile Include="Migrations\201611200902592_ReplacingDataAnnotationWithFluentApi.Designer.cs">
+      <DependentUpon>201611200902592_ReplacingDataAnnotationWithFluentApi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611201010447_AddApplicationUserTable.cs" />
+    <Compile Include="Migrations\201611201010447_AddApplicationUserTable.Designer.cs">
+      <DependentUpon>201611201010447_AddApplicationUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.cs" />
+    <Compile Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.Designer.cs">
+      <DependentUpon>201611201040085_RemovedNameColumnFromUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Teamsheet.Core\Teamsheet.Core.csproj">
+      <Project>{e6ed7dd6-6e4e-48f6-812b-4c9b1fecb735}</Project>
+      <Name>Teamsheet.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Teamsheet.Entities\Teamsheet.Entities.csproj">
+      <Project>{d397ca25-6dc7-4370-ba9c-4b3e8707e302}</Project>
+      <Name>Teamsheet.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611191631410_Initial.resx">
+      <DependentUpon>201611191631410_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611200902592_ReplacingDataAnnotationWithFluentApi.resx">
+      <DependentUpon>201611200902592_ReplacingDataAnnotationWithFluentApi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611201010447_AddApplicationUserTable.resx">
+      <DependentUpon>201611201010447_AddApplicationUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.resx">
+      <DependentUpon>201611201040085_RemovedNameColumnFromUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
