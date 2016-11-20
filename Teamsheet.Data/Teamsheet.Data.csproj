@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Context\TeamsheetContext.cs" />
     <Compile Include="EntityConfiguration\ActivityConfiguration.cs" />
+    <Compile Include="EntityConfiguration\ApplicationUserConfiguration.cs" />
     <Compile Include="EntityConfiguration\DayConfiguration.cs" />
     <Compile Include="EntityConfiguration\EntryConfiguration.cs" />
     <Compile Include="EntityConfiguration\SectionConfiguration.cs" />
@@ -78,6 +79,10 @@
     <Compile Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.cs" />
     <Compile Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.Designer.cs">
       <DependentUpon>201611201040085_RemovedNameColumnFromUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.cs" />
+    <Compile Include="Migrations\201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.Designer.cs">
+      <DependentUpon>201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.resx">
       <DependentUpon>201611201040085_RemovedNameColumnFromUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.resx">
+      <DependentUpon>201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,6 +36,7 @@ namespace Teamsheet.Data.Context
             modelBuilder.Configurations.Add(new ActivityConfiguration());
             modelBuilder.Configurations.Add(new DayConfiguration());
             modelBuilder.Configurations.Add(new WeekConfiguration());
+            modelBuilder.Configurations.Add(new ApplicationUserConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
