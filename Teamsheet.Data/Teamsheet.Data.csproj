@@ -89,6 +89,10 @@
     <Compile Include="Migrations\201611201347052_AddCompanyTable.Designer.cs">
       <DependentUpon>201611201347052_AddCompanyTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs" />
+    <Compile Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.Designer.cs">
+      <DependentUpon>201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -124,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611201347052_AddCompanyTable.resx">
       <DependentUpon>201611201347052_AddCompanyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.resx">
+      <DependentUpon>201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

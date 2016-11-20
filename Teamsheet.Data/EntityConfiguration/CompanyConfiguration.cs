@@ -19,6 +19,7 @@ namespace Teamsheet.Data.EntityConfiguration
             HasMany(c => c.Employees)
             .WithOptional(e => e.Company)
             .HasForeignKey(e => e.CompanyId);
+
         }
     }
 }

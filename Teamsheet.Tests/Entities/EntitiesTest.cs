@@ -13,10 +13,6 @@ namespace Teamsheet.Tests.Entities
         public EntitiesTest()
         {
             this._context = new TeamsheetContext();
-            if(true)
-            {
-
-            }
         }
 
         [TestMethod]
@@ -55,8 +51,8 @@ namespace Teamsheet.Tests.Entities
             {
                 new Activity
                 {
-                    //CreatedBy = "Majid",
-                    //ModifiedBy = "Majid",
+                    CreatedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
+                    ModifiedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     Description = "Adminstration talks include emails, telephone calls etc.",
@@ -64,8 +60,8 @@ namespace Teamsheet.Tests.Entities
                 },
                 new Activity
                 {
-                   //CreatedBy = "Majid",
-                   //ModifiedBy = "Majid",
+                    CreatedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
+                    ModifiedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     Description = "Learning and development included reading tutorials, attending pluralsight conferences.",
@@ -73,8 +69,8 @@ namespace Teamsheet.Tests.Entities
                 },
                 new Activity
                 {
-                    //CreatedBy = "Majid",
-                    //ModifiedBy = "Majid",
+                    CreatedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
+                    ModifiedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     Description = "CRMLive is a project for Mostyn - Warwick chemical",
@@ -86,8 +82,8 @@ namespace Teamsheet.Tests.Entities
             var section = new Section()
             {
                 Activities = activites,
-                //CreatedBy = "Majid",
-                //ModifiedBy = "Majid",
+                CreatedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
+                ModifiedById = "a8f3a706-6ac1-411c-80b5-c4919ef9e31c",
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
                 Description = "Test",
