@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.ComponentModel.DataAnnotations;
+using Teamsheet.Entities;
 
 namespace Teamsheet.Models
 {
@@ -11,7 +12,9 @@ namespace Teamsheet.Models
     public class ApplicationUser : IdentityUser
     {
         public string Name { get; set; }
-        public string CompanyName { get; set; }
+
+        public Company Company { get; set; }
+        public int? CompanyId { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

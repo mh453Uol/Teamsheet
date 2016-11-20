@@ -15,11 +15,6 @@ namespace Teamsheet.Data.EntityConfiguration
             Property(a => a.Name)
             .HasMaxLength(125)
             .IsRequired();
-
-            Property(a => a.CompanyName)
-            .HasMaxLength(125)
-            .IsRequired();
-
         }
     }
 }

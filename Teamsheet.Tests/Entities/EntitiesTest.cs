@@ -55,8 +55,8 @@ namespace Teamsheet.Tests.Entities
             {
                 new Activity
                 {
-                    CreatedBy = "Majid",
-                    ModifiedBy = "Majid",
+                    //CreatedBy = "Majid",
+                    //ModifiedBy = "Majid",
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     Description = "Adminstration talks include emails, telephone calls etc.",
@@ -64,8 +64,8 @@ namespace Teamsheet.Tests.Entities
                 },
                 new Activity
                 {
-                    CreatedBy = "Majid",
-                    ModifiedBy = "Majid",
+                   //CreatedBy = "Majid",
+                   //ModifiedBy = "Majid",
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     Description = "Learning and development included reading tutorials, attending pluralsight conferences.",
@@ -73,8 +73,8 @@ namespace Teamsheet.Tests.Entities
                 },
                 new Activity
                 {
-                    CreatedBy = "Majid",
-                    ModifiedBy = "Majid",
+                    //CreatedBy = "Majid",
+                    //ModifiedBy = "Majid",
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     Description = "CRMLive is a project for Mostyn - Warwick chemical",
@@ -86,8 +86,8 @@ namespace Teamsheet.Tests.Entities
             var section = new Section()
             {
                 Activities = activites,
-                CreatedBy = "Majid",
-                ModifiedBy = "Majid",
+                //CreatedBy = "Majid",
+                //ModifiedBy = "Majid",
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
                 Description = "Test",

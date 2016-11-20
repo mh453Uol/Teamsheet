@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Activity.cs" />
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Company.cs" />
     <Compile Include="Day.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="IdentityModels.cs" />
