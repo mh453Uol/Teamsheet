@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Teamsheet.Data.Context;
 using Teamsheet.Entities;
 using System.Linq;
+using Teamsheet.Models;
+
 namespace Teamsheet.Tests.Entities
 {
     [TestClass]
@@ -17,38 +19,33 @@ namespace Teamsheet.Tests.Entities
 
         [TestMethod]
         public void AddWeek()
-        { 
-            /*
+        {
+
             var week = new Week()
             {
                 StartDate = DateTime.Now,
                 EndDate = DateTime.Now,
-                Days = new List<Day>()
+                Entries = new List<Entry>()
                 {
-                    new Day()
+                    new Entry
                     {
-                        Date = DateTime.Now,     
-                        Entries = new List<Entry>()
-                        {
-                            new Entry
-                            {
-                                Duration = DateTime.Now,
-                                ActivityId = 1,
-
-                            }
-                        }
+                        Duration = DateTime.Now.Date.AddHours(4.0),
+                        ActivityId = 1,
                     }
                 }
             };
-
             _context.Weeks.Add(week);
             _context.SaveChanges();
-            */
         }
 
         [TestMethod]
         public void AddActivities()
         {
+            var user = new ApplicationUser()
+            {
+
+            };
+
             var activites = new List<Activity>()
             {
                 new Activity

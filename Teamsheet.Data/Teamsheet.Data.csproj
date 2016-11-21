@@ -92,6 +92,10 @@
     <Compile Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.Designer.cs">
       <DependentUpon>201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611211830419_removedDayTable.cs" />
+    <Compile Include="Migrations\201611211830419_removedDayTable.Designer.cs">
+      <DependentUpon>201611211830419_removedDayTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -130,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.resx">
       <DependentUpon>201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611211830419_removedDayTable.resx">
+      <DependentUpon>201611211830419_removedDayTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
