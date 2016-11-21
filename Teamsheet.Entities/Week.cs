@@ -7,7 +7,7 @@ namespace Teamsheet.Entities
     public class Week
     {
         public int Id { get; set; }
-        public ICollection<Day> Days { get; set; }
+        public ICollection<Entry> Entry { get; set; }
 
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "[0:dd/MM/yyyy}")]
         public DateTime StartDate { get; set; }

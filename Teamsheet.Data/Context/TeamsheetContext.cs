@@ -21,9 +21,7 @@ namespace Teamsheet.Data.Context
         public DbSet<Section> Sections { get; set; }
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Entry> Entries { get; set; }
-        public DbSet<Day> Days { get; set; }
         public DbSet<Week> Weeks { get; set; }
-
         public static TeamsheetContext Create()
         {
             return new TeamsheetContext();
@@ -34,7 +32,6 @@ namespace Teamsheet.Data.Context
             modelBuilder.Configurations.Add(new SectionConfiguration());
             modelBuilder.Configurations.Add(new EntryConfiguration());
             modelBuilder.Configurations.Add(new ActivityConfiguration());
-            modelBuilder.Configurations.Add(new DayConfiguration());
             modelBuilder.Configurations.Add(new WeekConfiguration());
             modelBuilder.Configurations.Add(new ApplicationUserConfiguration());
             modelBuilder.Configurations.Add(new CompanyConfiguration());

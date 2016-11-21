@@ -12,9 +12,9 @@ namespace Teamsheet.Data.EntityConfiguration
     {
         public WeekConfiguration()
         {
-            HasMany(c => c.Days)
-            .WithRequired(d => d.Week)
-            .HasForeignKey(d => d.WeekId);
+            HasMany(c => c.Entry)
+            .WithRequired(e => e.Week)
+            .HasForeignKey(e => e.WeekId);
         }
     }
 }

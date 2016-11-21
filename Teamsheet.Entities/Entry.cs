@@ -12,11 +12,12 @@ namespace Teamsheet.Entities
     {
         public int Id { get; set; }
 
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime Duration { get; set; }
 
-        public Day Day { get; set; }
+        public Week Week { get; set; }
 
-        public int DayId { get; set; }
+        public int WeekId { get; set; }
 
         public Activity Activity { get; set; }
 
