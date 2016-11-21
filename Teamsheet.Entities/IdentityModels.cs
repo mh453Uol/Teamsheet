@@ -12,7 +12,6 @@ namespace Teamsheet.Models
     public class ApplicationUser : IdentityUser
     {
         public string Name { get; set; }
-
         public Company Company { get; set; }
         public int? CompanyId { get; set; }
 
