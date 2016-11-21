@@ -10,6 +10,10 @@ namespace Teamsheet.Entities
 {
     public class Company : BaseEntity
     {
+        public Company()
+        {
+            this.Employees = new List<ApplicationUser>();
+        }
         public int Id { get; set; }
 
         public string Name { get; set; }

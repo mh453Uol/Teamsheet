@@ -22,6 +22,8 @@ namespace Teamsheet.Data.Context
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Entry> Entries { get; set; }
         public DbSet<Week> Weeks { get; set; }
+        public DbSet<Company> Companies { get; set; }
+
         public static TeamsheetContext Create()
         {
             return new TeamsheetContext();
