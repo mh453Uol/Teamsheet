@@ -20,6 +20,13 @@ namespace Teamsheet.Data.EntityConfiguration
             .WithOptional(e => e.Company)
             .HasForeignKey(e => e.CompanyId);
 
+            HasRequired(c => c.CreatedBy)
+            .WithMany()
+            .WillCascadeOnDelete(false);
+
+            HasRequired(c => c.ModifiedBy)
+            .WithMany()
+            .WillCascadeOnDelete(false);
         }
     }
 }

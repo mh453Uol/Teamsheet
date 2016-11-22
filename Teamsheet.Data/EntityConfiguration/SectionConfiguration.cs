@@ -23,6 +23,14 @@ namespace Teamsheet.Data.EntityConfiguration
             HasMany(s => s.Activities)
             .WithRequired(a => a.Section)
             .HasForeignKey(a => a.SectionId);
+
+            HasRequired(s => s.CreatedBy)
+            .WithMany()
+            .WillCascadeOnDelete(false);
+
+            HasRequired(s => s.ModifiedBy)
+            .WithMany()
+            .WillCascadeOnDelete(false);
         }
     }
 }

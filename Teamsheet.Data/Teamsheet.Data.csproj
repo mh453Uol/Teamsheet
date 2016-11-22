@@ -64,41 +64,9 @@
     <Compile Include="EntityConfiguration\EntryConfiguration.cs" />
     <Compile Include="EntityConfiguration\SectionConfiguration.cs" />
     <Compile Include="EntityConfiguration\WeekConfiguration.cs" />
-    <Compile Include="Migrations\201611191631410_Initial.cs" />
-    <Compile Include="Migrations\201611191631410_Initial.Designer.cs">
-      <DependentUpon>201611191631410_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611200902592_ReplacingDataAnnotationWithFluentApi.cs" />
-    <Compile Include="Migrations\201611200902592_ReplacingDataAnnotationWithFluentApi.Designer.cs">
-      <DependentUpon>201611200902592_ReplacingDataAnnotationWithFluentApi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611201010447_AddApplicationUserTable.cs" />
-    <Compile Include="Migrations\201611201010447_AddApplicationUserTable.Designer.cs">
-      <DependentUpon>201611201010447_AddApplicationUserTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.cs" />
-    <Compile Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.Designer.cs">
-      <DependentUpon>201611201040085_RemovedNameColumnFromUserTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.cs" />
-    <Compile Include="Migrations\201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.Designer.cs">
-      <DependentUpon>201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611201347052_AddCompanyTable.cs" />
-    <Compile Include="Migrations\201611201347052_AddCompanyTable.Designer.cs">
-      <DependentUpon>201611201347052_AddCompanyTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs" />
-    <Compile Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.Designer.cs">
-      <DependentUpon>201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611211830419_removedDayTable.cs" />
-    <Compile Include="Migrations\201611211830419_removedDayTable.Designer.cs">
-      <DependentUpon>201611211830419_removedDayTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611211927394_AddCompanyDbContext.cs" />
-    <Compile Include="Migrations\201611211927394_AddCompanyDbContext.Designer.cs">
-      <DependentUpon>201611211927394_AddCompanyDbContext.cs</DependentUpon>
+    <Compile Include="Migrations\201611221838375_InitialModel.cs" />
+    <Compile Include="Migrations\201611221838375_InitialModel.Designer.cs">
+      <DependentUpon>201611221838375_InitialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,32 +86,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611191631410_Initial.resx">
-      <DependentUpon>201611191631410_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611200902592_ReplacingDataAnnotationWithFluentApi.resx">
-      <DependentUpon>201611200902592_ReplacingDataAnnotationWithFluentApi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611201010447_AddApplicationUserTable.resx">
-      <DependentUpon>201611201010447_AddApplicationUserTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611201040085_RemovedNameColumnFromUserTable.resx">
-      <DependentUpon>201611201040085_RemovedNameColumnFromUserTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.resx">
-      <DependentUpon>201611201309478_AddCompanyNameAndNameColumnToApplicationUserTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611201347052_AddCompanyTable.resx">
-      <DependentUpon>201611201347052_AddCompanyTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611201448047_AddCreatedByIdAndModifiedByIdColumn.resx">
-      <DependentUpon>201611201448047_AddCreatedByIdAndModifiedByIdColumn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611211830419_removedDayTable.resx">
-      <DependentUpon>201611211830419_removedDayTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611211927394_AddCompanyDbContext.resx">
-      <DependentUpon>201611211927394_AddCompanyDbContext.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611221838375_InitialModel.resx">
+      <DependentUpon>201611221838375_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
