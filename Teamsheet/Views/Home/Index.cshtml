@@ -1,5 +1,24 @@
-﻿@{
+﻿@model Teamsheet.Models.ProfileViewModel
+@{
     ViewBag.Title = "Home Page";
 }
 
-@Html.ActionLink("Create Company", "Create", "Company", null, null);
+@if (!Model.isRegisteredToCompany)
+{
+
+    @Html.ActionLink("Create Company", "Create", "Company", null, null);
+
+}
+
+
+@if (Model.isManager)
+{
+    <p>IS MANAGER</p>
+
+    @Html.ActionLink("Signup an employee", "Register", "Account", null, null);
+
+}
+
+
+
+

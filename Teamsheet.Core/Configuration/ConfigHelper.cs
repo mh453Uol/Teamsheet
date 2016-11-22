@@ -10,7 +10,8 @@ namespace Teamsheet.Core.Configuration
     {
         public static string GetConnectionString()
         {
-            return "Server=.;Database=Teamsheet;Trusted_Connection=True;";
+            // return "Server=BIGPC048;Database=Teamsheet;Trusted_Connection=True;";
+            return "Server=BIGPC048; Database=Teamsheet;User Id=chay;Password=chay;";
         }
     }
 }

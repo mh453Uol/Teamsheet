@@ -64,11 +64,6 @@
     <Compile Include="EntityConfiguration\EntryConfiguration.cs" />
     <Compile Include="EntityConfiguration\SectionConfiguration.cs" />
     <Compile Include="EntityConfiguration\WeekConfiguration.cs" />
-    <Compile Include="Migrations\201611221838375_InitialModel.cs" />
-    <Compile Include="Migrations\201611221838375_InitialModel.Designer.cs">
-      <DependentUpon>201611221838375_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,11 +79,6 @@
       <Project>{d397ca25-6dc7-4370-ba9c-4b3e8707e302}</Project>
       <Name>Teamsheet.Entities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611221838375_InitialModel.resx">
-      <DependentUpon>201611221838375_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
