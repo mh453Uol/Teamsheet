@@ -12,7 +12,7 @@ namespace Teamsheet.Entities
     {
         public Company()
         {
-            this.Employees = new List<ApplicationUser>();
+            Employees = new List<ApplicationUser>();
         }
         public int Id { get; set; }
 

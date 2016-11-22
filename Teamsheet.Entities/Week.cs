@@ -8,7 +8,7 @@ namespace Teamsheet.Entities
     {
         public Week()
         {
-            this.Entries = new List<Entry>();
+            Entries = new List<Entry>();
         }
         public int Id { get; set; }
         public ICollection<Entry> Entries { get; set; }
