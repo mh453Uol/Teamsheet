@@ -60,12 +60,6 @@
     <Compile Include="Activity.cs" />
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Company.cs" />
-    <Compile Include="EntityConfiguration\ActivityConfiguration.cs" />
-    <Compile Include="EntityConfiguration\ApplicationUserConfiguration.cs" />
-    <Compile Include="EntityConfiguration\CompanyConfiguration.cs" />
-    <Compile Include="EntityConfiguration\EntryConfiguration.cs" />
-    <Compile Include="EntityConfiguration\SectionConfiguration.cs" />
-    <Compile Include="EntityConfiguration\WeekConfiguration.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
