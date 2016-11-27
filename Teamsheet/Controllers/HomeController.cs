@@ -19,6 +19,8 @@ namespace Teamsheet.Controllers
         {
             this.context = new TeamsheetContext();
         }
+
+        /*
         public ActionResult Index()
         {
 
@@ -34,6 +36,7 @@ namespace Teamsheet.Controllers
 
             return View(model);
         }
+        */
 
         public ActionResult About()
         {
