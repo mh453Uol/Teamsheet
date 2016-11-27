@@ -64,6 +64,14 @@ namespace Teamsheet.Controllers
             return RedirectToAction("Index","Home");
         }
 
+        public ActionResult CreateEmployee()
+        {
+            
+            return View();
+
+        }
+
+
         // GET: Company/Edit/5
         public ActionResult Edit(int id)
         {
