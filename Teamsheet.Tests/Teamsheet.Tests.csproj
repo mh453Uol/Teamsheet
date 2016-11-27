@@ -117,10 +117,6 @@
       <Project>{d397ca25-6dc7-4370-ba9c-4b3e8707e302}</Project>
       <Name>Teamsheet.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Teamsheet\Teamsheet.csproj">
-      <Project>{AAD9D727-5505-4512-9C9E-7EBE72DBA8A7}</Project>
-      <Name>Teamsheet</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
