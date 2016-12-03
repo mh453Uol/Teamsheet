@@ -8,7 +8,7 @@ using Teamsheet.Data.Context;
 
 namespace Teamsheet.WebApi.Controllers
 {
-    public class ActivitiesController : ODataController
+    public class ActivitiesController:ODataController
     {
         private TeamsheetContext context;
 
@@ -19,9 +19,7 @@ namespace Teamsheet.WebApi.Controllers
 
         public IHttpActionResult Get()
         {
-            return Ok(context.Activities.ToList());
+            return Ok(context.Activities);
         }
-
     }
-
 }
