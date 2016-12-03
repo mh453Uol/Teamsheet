@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamsheet.Entities", "Teamsheet.Entities\Teamsheet.Entities.csproj", "{D397CA25-6DC7-4370-BA9C-4B3E8707E302}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamsheet.Core", "Teamsheet.Core\Teamsheet.Core.csproj", "{E6ED7DD6-6E4E-48F6-812B-4C9B1FECB735}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamsheet.WebApi", "Teamsheet.WebApi\Teamsheet.WebApi.csproj", "{E5C9069B-7FF3-4E5F-8B7B-24C826AD5E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamsheet.Web", "Teamsheet.Web\Teamsheet.Web.csproj", "{F90F4F93-DF3E-4A4E-B4C5-8EE00365E9C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E5C9069B-7FF3-4E5F-8B7B-24C826AD5E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5C9069B-7FF3-4E5F-8B7B-24C826AD5E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5C9069B-7FF3-4E5F-8B7B-24C826AD5E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90F4F93-DF3E-4A4E-B4C5-8EE00365E9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90F4F93-DF3E-4A4E-B4C5-8EE00365E9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90F4F93-DF3E-4A4E-B4C5-8EE00365E9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90F4F93-DF3E-4A4E-B4C5-8EE00365E9C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
