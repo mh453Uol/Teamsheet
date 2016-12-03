@@ -17,6 +17,7 @@ namespace Teamsheet.Data.Context
         public TeamsheetContext() : base(ConfigHelper.GetConnectionString(), throwIfV1Schema: false)
         {
 
+
         }
         public DbSet<Section> Sections { get; set; }
         public DbSet<Activity> Activities { get; set; }
