@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web.Http;
 using System.Web.OData.Builder;
 using System.Web.OData.Extensions;
+using Teamsheet.Entities;
 
 namespace Teamsheet.WebApi
 {
@@ -26,6 +27,7 @@ namespace Teamsheet.WebApi
             */
 
             config.MapODataServiceRoute("ODataRoute", "odata", GetEdmModel());
+            config.EnsureInitialized();
     }
         private static IEdmModel GetEdmModel()
         {
@@ -33,7 +35,8 @@ namespace Teamsheet.WebApi
             builder.Namespace = "Teamsheet";
             builder.ContainerName = "TeamsheetContainer";
             //Add more entity sets here if you want to use them in your api controllers.
-            builder.EntitySet<Entities.Activity>("Activities");
+            builder.EntitySet<Activity>("Activities");
+            builder.EntitySet<Company>("Companies");
 
             return builder.GetEdmModel();
         }

@@ -16,14 +16,14 @@ namespace Teamsheet.Data.Context
     {
         public TeamsheetContext() : base(ConfigHelper.GetConnectionString(), throwIfV1Schema: false)
         {
-
-
+            //Database.SetInitializer(new TeamsheetInitializer());
         }
         public DbSet<Section> Sections { get; set; }
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Entry> Entries { get; set; }
         public DbSet<Week> Weeks { get; set; }
         public DbSet<Company> Companies { get; set; }
+        public DbSet<Country> Country { get; set; }
 
         public static TeamsheetContext Create()
         {
@@ -38,6 +38,7 @@ namespace Teamsheet.Data.Context
             modelBuilder.Configurations.Add(new WeekConfiguration());
             modelBuilder.Configurations.Add(new ApplicationUserConfiguration());
             modelBuilder.Configurations.Add(new CompanyConfiguration());
+            modelBuilder.Configurations.Add(new CountryConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }

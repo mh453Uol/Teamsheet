@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\TeamsheetContext.cs" />
+    <Compile Include="Context\TeamsheetInitializer.cs" />
+    <Compile Include="EntityConfiguration\CountryConfiguration.cs" />
     <Compile Include="EntityConfiguration\ActivityConfiguration.cs" />
     <Compile Include="EntityConfiguration\ApplicationUserConfiguration.cs" />
     <Compile Include="EntityConfiguration\CompanyConfiguration.cs" />
@@ -67,6 +69,10 @@
     <Compile Include="Migrations\201612031254366_Initial.cs" />
     <Compile Include="Migrations\201612031254366_Initial.Designer.cs">
       <DependentUpon>201612031254366_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612041334399_AddedCountryTableandIncludedCompanyFieldinCompanyTable.cs" />
+    <Compile Include="Migrations\201612041334399_AddedCountryTableandIncludedCompanyFieldinCompanyTable.Designer.cs">
+      <DependentUpon>201612041334399_AddedCountryTableandIncludedCompanyFieldinCompanyTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +94,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612031254366_Initial.resx">
       <DependentUpon>201612031254366_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612041334399_AddedCountryTableandIncludedCompanyFieldinCompanyTable.resx">
+      <DependentUpon>201612041334399_AddedCountryTableandIncludedCompanyFieldinCompanyTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

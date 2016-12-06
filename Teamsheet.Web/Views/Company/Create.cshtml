@@ -1,0 +1,100 @@
+﻿@model Teamsheet.Web.Models.CompanyViewModels
+@{
+    ViewBag.Title = "Add Company";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <h4>Add new Company.</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control js-company-name" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.AddressLine1, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.AddressLine1,
+           new { @class = "form-control js-company-address-line-one" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.AddressLine2, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.AddressLine2,
+           new { @class = "form-control js-company-address-line-two" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.AddressLine3, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.AddressLine3, new { @class = "form-control js-company-address-line-three" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PostCode, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.PostCode, new { @class = "form-control js-company-postcode" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Country, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.Country, new SelectList(Model.Countries, "ID", "Name"), "Select A Country", new { @class = "form-control js-company-country" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-default js-add-company" value="Register">Save</button>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+
+            $("form").submit(function () {
+
+                var name = $(".js-company-name").val();
+                var addressLine1 = $(".js-company-address-line-one").val();
+                var addressLine2 = $(".js-company-address-line-two").val();
+                var addressLine3 = $(".js-company-address-line-three").val();
+                var postcode = $(".js-company-postcode").val();
+                var country = $(".js-company-country").val();
+
+                var dataJSON =
+                {
+                    Name: name,
+                    AddressLine1: addressLine1,
+                    AddressLine2: addressLine2,
+                    AddressLine3: addressLine3,
+                    PostCode: postcode,
+                    Country: country,
+                }
+
+                console.
+                $.ajax({
+                    type: "POST",
+                    url: "/Teamsheet.WebApi/odata/Companies",
+                    data: JSON.stringify(dataJSON),
+                    ContentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        alert("success");
+                    },
+                });
+            });
+        });
+    </script>
+}

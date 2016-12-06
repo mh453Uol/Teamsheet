@@ -16,6 +16,18 @@ namespace Teamsheet.Data.EntityConfiguration
             .HasMaxLength(255)
             .IsRequired();
 
+            Property(c => c.AddressLine1)
+            .HasMaxLength(125)
+            .IsRequired();
+
+            Property(c => c.AddressLine2)
+            .HasMaxLength(125)
+            .IsRequired();
+
+            Property(c => c.Country)
+            .HasMaxLength(60)
+            .IsRequired();
+
             HasMany(c => c.Employees)
             .WithOptional(e => e.Company)
             .HasForeignKey(e => e.CompanyId);
